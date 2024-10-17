@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 .cedarville-cursive-regular {
   font-family: "Cedarville Cursive", cursive;
@@ -16,9 +18,7 @@
     --textdim: #51518b;
     --textdark: #18181b;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 * {
 margin: 0;

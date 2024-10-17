@@ -2,21 +2,27 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     var navbar = document.getElementById('navbar-sticky');
     navbar.classList.toggle('hidden');
 });
-
+document.addEventListener('DOMContentLoaded', function() {
+  // Your script code here
+  const elements = document.querySelectorAll('.your-element-class');
+  if (elements) {
+      // Do something with the elements
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   let carousel = document.querySelector(".carousel");
-  let items = carousel.querySelectorAll(".item");
+  // let items = carousel.querySelectorAll(".item");
   let dotsContainer = document.querySelector(".dots");
 
   // Insert dots into the DOM
-  items.forEach((_, index) => {
-    let dot = document.createElement("span");
-    dot.classList.add("dot");
-    if (index === 0) dot.classList.add("active");
-    dot.dataset.index = index;
-    dotsContainer.appendChild(dot);
-  });
+  // items.forEach((_, index) => {
+  //   let dot = document.createElement("span");
+  //   dot.classList.add("dot");
+  //   if (index === 0) dot.classList.add("active");
+  //   dot.dataset.index = index;
+  //   dotsContainer.appendChild(dot);
+  // });
 
   let dots = document.querySelectorAll(".dot");
 
